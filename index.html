@@ -8,38 +8,57 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/14840aae56.js" crossorigin="anonymous"></script>
+<!--        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="assets/css/style.css">
 
         <title>Dice Game</title>
     </head>
     <body>
-        <div class="container">
-            <h1 class="text-center">Dice Game</h1>
-            <div class="btn-container d-flex">
-                <div class="new-game text-center btn m-auto">
-                    <i class="fas fa-plus-circle"></i> New Game
+        <div id="turn">
+            <div class="background-pages m-4">
+                <div class="p-4 text-center">
+                    Please rotate your device!
                 </div>
             </div>
-            <div class="players row position-relative">
+        </div>
+        <div class="container position-relative">
+            <div class="background-pages row position-absolute w-100 h-100">
+                <div class="col-6"></div><div class="col-6"></div>
+            </div>
+            <div class="btn-container d-flex flex-column position-relative">
+                <h1 class="text-center m-2 m-xl-4">Dice Game</h1>
+                <div class="new-game text-center btn m-auto">
+                    <i class="ion-ios-plus-outline"></i> New Game
+                </div>
+            </div>
+            <div class="players mt-md-3 row position-relative">
                 <div class="p1 col text-center">
-                    <h3>Player 1 <span class="red-dot"></span></h3>
+                    <div class="player">Player 1 <span class="red-dot"></span></div>
                     <div class="global">43</div>
-                    <div class="current">11</div>
+                    <div class="current">
+                        current
+                        <div class="points">11</div>
+                    </div>
                 </div>
                 <div class="p2 col text-center">
-                    <h3><span class="red-dot"></span> Player 2</h3>
+                    <div class="player"><span class="red-dot"></span> Player 2</div>
                     <div class="global">72</div>
-                    <div class="current">0</div>
+                    <div class="current">
+                        current
+                        <div class="points">0</div>
+                    </div>
                 </div>
-                <div id="dice-container" class="position-absolute text-center">
-                    <div id="dice-image"></div>
+                <div class="position-absolute text-center">
+                    <div id="dice-container" class="d-flex m-auto">
+                        <div id="dice-image"></div>
+                    </div>
                 </div>
             </div>
-            <div class="controls d-flex flex-column">
-                <div id="roll" class="btn btn-primary m-auto"><i class="fas fa-sync-alt"></i> Roll dice</div>
-                <div id="hold" class="btn btn-primary m-auto"><i class="fas fa-download"></i> Hold</div>
+            <div class="controls d-flex flex-column position-absolute">
+                <div id="roll" class="btn m-auto mb-1 mb-xl-3"><i class="ion-ios-loop"></i> Roll dice</div>
+                <div id="hold" class="btn m-auto"><i class="ion-ios-download-outline"></i> Hold</div>
             </div>
         </div>
 
