@@ -53,6 +53,7 @@ h1 {
     border-radius: 50%;
     display: inline-block;
     background-color: #EB4D4D;
+    opacity: 0;
 }
 .global {
     font-size: 5em;
@@ -76,6 +77,23 @@ h1 {
     width: 130px;
     padding: 20px;
     margin: auto;
+}
+.p1 .current .add {
+    right: 30px;
+}
+.p2 .current .add {
+    left: 30px;
+}
+.current .add {
+    color: #f7f7f7;
+    opacity: 0;
+    transform: translate(0,10px);
+    transition: transform 0s, opacity 0s;
+}
+.current .add.active {
+    opacity: 1;
+    transform: translate(0,0);
+    transition: transform 400ms, opacity 200ms;
 }
 .current .points {
     color: #f7f7f7;
