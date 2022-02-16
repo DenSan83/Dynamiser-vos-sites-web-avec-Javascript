@@ -42,10 +42,20 @@ h1 {
     font-size: 1.4em;
     margin-right: 10px;
 }
+.btn.disabled {
+    opacity: 0.4;
+}
 
 .player {
     font-size: 2.5em;
     font-weight: 100;
+}
+.player .winner {
+    color: #EB4D4D;
+    position: absolute;
+    top: -1.2em;
+    left: 0;
+    right: 0;
 }
 .player .red-dot {
     width: 17px;
