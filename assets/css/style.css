@@ -18,7 +18,7 @@ body {
 .container {
     margin-top: 5vh;
     height: 90vh;
-    background-color: white;
+    background-color: #FFF;
     box-shadow: 0px 10px 50px rgb(0 0 0 / 30%);
     overflow: hidden;
 }
@@ -34,7 +34,7 @@ body {
                                PAGE BODY
 ****************************************************************************/
 .background-pages div:first-child {
-    background-color: #f7f7f7;
+    background-color: #F7F7F7;
 }
 .btn-container {
     width: fit-content;
@@ -107,7 +107,7 @@ h1 {
     left: 30px;
 }
 .current .add {
-    color: #f7f7f7;
+    color: #F7F7F7;
     opacity: 0;
     transform: translate(0,10px);
     transition: transform 0s, opacity 0s;
@@ -118,7 +118,7 @@ h1 {
     transition: transform 400ms, opacity 200ms;
 }
 .current .points {
-    color: #f7f7f7;
+    color: #F7F7F7;
     font-size: 1.8em;
     margin-top: 10px;
 }
@@ -126,7 +126,7 @@ h1 {
                             DICE & CONTROLS
 ****************************************************************************/
 #dice-container {
-    background-color: #fff;
+    background-color: #FFF;
     border-radius: 50%;
     width: 180px;
     height: 180px;
@@ -168,7 +168,7 @@ input[type='checkbox']{
     position: fixed;
     width: 95vw;
     height: 90vh;
-    background: #f7f7f7;
+    background: #F7F7F7;
     box-shadow: 0px 10px 50px rgb(0 0 0 / 30%);
     top: 5vh;
     left: 5vh;
