@@ -58,6 +58,7 @@ class Game {
     }
 
     endTurn() {
+        // Purely visual indications
         this.round = 0;
         p1.current.innerText = '0';
         p2.current.innerText = '0';
@@ -77,6 +78,7 @@ class Game {
     }
 
     saveToGlobal() {
+        // Add to player Global points
         if (this.turn === 1) {
             this.globalP1 += this.round;
             p1.global.innerText = this.globalP1;
@@ -85,6 +87,7 @@ class Game {
             p2.global.innerText = this.globalP2;
         }
 
+        // If a player has dom.limitPoints or more, declare winner. Else, end turn
         if (this.globalP1 >= dom.limitPoints || this.globalP2 >= dom.limitPoints) {
             this.declareWinner();
         } else {
@@ -94,6 +97,7 @@ class Game {
     }
 
     declareWinner() {
+        // Visuals
         dom.rollBtn.classList.add('disabled');
         dom.holdBtn.classList.add('disabled');
         dom.fireworks.classList.remove('d-none');
@@ -111,9 +115,11 @@ class Game {
     }
 
     playSound(sound) {
+        // Verify sound exists
         if (sound !== 'win' && sound !== 'lose') {
             return;
         }
+        // Create, append, load and play sound
         let soundFile = document.createElement('audio');
         soundFile.preload = 'auto';
         let src = document.createElement('source');
