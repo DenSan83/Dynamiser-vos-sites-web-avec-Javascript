@@ -2,12 +2,12 @@
 
 <ins>Dynamiser vos sites web avec Javascript</ins>
 
-##Couleurs de base :
+## Couleurs de base :
 * Noir de base : #212529 (couleur par défaut)
 * Rouge : #EB4D4D
 * Blanc foncé : #F7F7F7
 
-##Famille de font demandée :
+## Famille de font demandée :
 * Lato
 
 ## Description :
